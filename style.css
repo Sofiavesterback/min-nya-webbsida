@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Här lägger jag en klass för navbar då jag vill ha texten i mitten*/
+.navbar{
+    display: flex;
+    justify-content:  center; 
+    position: sticky;
+    background-color: rgb(194, 182, 235)
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style:  none;
+    margin: 20px 0px;
+
+}
+
+.navbar ul li{
+    font-family: verdana;
+    font-size: 20px;
+    
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.navbar ul li a:hover{ /*när man hovrar över ska färgen ändras*/
+   color: purple; 
+}
+
+
+.wrapper{
+   color: grey;
+   text-align: center;
+   font-size: 45px;
+   font-family: century;
+   font-style:oblique;
+   padding: 10px;
+   letter-spacing: 5px;
+
+  
+}
+
+.image{
+    width: 100%;
+    height: 500px;
+    background-image: url(imggg/sofia.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    float:left;
+    background-position: center top;
+      
+}
+
+
+
+.button{
+   color:rgb(194, 182, 235);
+   font-family: verdana;
+   font-weight: 50px;
+   font-size: 20px;
+   text-align: center;
+   border: solid 2px rgb(194, 182, 235);
+   text-decoration: none;
+   border-radius: 50px;
+   padding: 10px 60px;
+   transition-duration: 200ms;
+    
+}
+
+.button:hover{
+   color: white;
+   background-color:rgb(194, 182, 235);
+
+}
+body{
+    background-color:floralwhite;
+    margin: 10px;
+    
+
+}
+
+.content{
+    color: grey;
+    font-family: verdana;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.box{
+    background-image: url(imggg/blomma.jpeg);
+    padding: 200px;
+    margin:200px;
+}
+
+.image1{
+    width: 100%;
+    height: 500px;
+    background-image: url(imggg/blomma.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    float:left;
+    background-position: center bottom;
+      
+}
+
+.image2{
+    width: 100%;
+    height: 500px;
+    background-image: url(imggg/projekt.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.content{
+    font-size: 20px;
+}
+
+.content2{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.titleP{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.contentP{
+    text-align: center;
+}
