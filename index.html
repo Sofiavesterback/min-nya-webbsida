@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css"> <!--Länkar till min css fil-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--Länk till google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+    <!--Från webbriktlinjer.se valde jag första punkten som är 1.4.3 (AA) att använda tillräckligt bra
+    med kontrast mellan text och bakgrund. Jag valde väldigt ljus bakgrundsfärg med mörk text över som
+    gör det tydligare att se texten då. Nästa punkt jag valde är 2.5.2(A) gör det möjligt att ångra klick.
+    Jag har länkat mina sociala medier på kontakt sidan och om man trycker ner musknappen där så kan man
+    ha en möjlighet att dra åt sidan och ångra sitt klick. Efter det om man trycker helt ned så får man
+    en pop up ruta som meddelar användaren först vad som kommer ske när den tryckt.-->
 </head>
 <body>
     <header>
@@ -18,39 +27,48 @@
        </ul>  
     </nav>
 
-    <div class="image"></div>
     </header>
-
+      
+    
 
        <section>
-           <div class="wrapper"> <!--skapar en div class-->
-               <h1 class="title">Mitt namn är <br> Sofia Vesterbäck</h1> <br> <!--gör en class till bara mitt namn (rubriken)som jag vill styla i css-->
-              
-               <a href="aboutMe.html" class="button">Tryck här för att läsa mer om mig direkt</a>
-               <!--gör en class av en button som jag vill styla sen i css-->
+           <div class="rubrik"> <!--skapar en div class-->
+               <h1 class="title">Sofia Vesterbäck</h1>
+               <p>UX-designer</p><br><b>
+               <a href="aboutMe.html" class="button">Tryck här för att läsa mer om mig direkt</a> <!--gör en class av en button som jag vill styla sen i css-->
+               
             </div>  
 
-               <div class="content">
-                <h2>Hej!</h2>
-                <p> Mitt namn är Sofia Vesterbäck jag är en student som just nu studerer utbildningen UX-designer. </p>
+            <div class="box"> <!--fick skapa en div class utanför min parent som finns nedanför, för det gick inte att ha den i min parent, då jag ville ha den överst-->
+                <h1>Hej, välkommen till mitt portfolio!</h1>
+                <p> Mitt namn är Sofia Vesterbäck, jag studerar för nuvarande till UX-designer på Chas Academy med kravkompetens. 
+                    Skolan är benägen i stockholm och det är även den stad jag bor i. Jag älskar att få kunna skapa och se
+                    hur saker och ting förbättras. Den här utbildningen får verkligen mig att känna att jag hittat rätt till vad jag faktiskt tycker är
+                    kul att hålla på med och känns väldigt spännande.
+                </p>
+              </div>
+
+
+
+
+               <div class="content"> <!--Här bärjar min parent class content-->
+                 <div class="box1">
+                    <img src="imggg/sofia.jpg" alt="sofiaa" class="box1">
+                 </div>  
                 <br><br>
-                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                  illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                  sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                  velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
-                  quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem 
-                  ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel quo voluptas?"</p>
+                
+
+             </div> <!--Avslutar min parent-->
+                
+            
+                   
+
+                <div class="footer"> <!--Lägger min footer utanför parent class content då den ska hamna längst ner när väl innehållet börjar fyllas på-->
+                    <footer>Email: sofiavesterback@hotmail.com</footer>
+                </div>
+
            
-                </div>      
-         
-       
-       </section>
-
-        
-
-    
+            </section>        
+            
 </body>
 </html>

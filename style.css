@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Här lägger jag en klass för navbar då jag vill ha texten i mitten*/
@@ -21,58 +22,51 @@
 }
 
 .navbar ul li{
-    font-family: verdana;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
     
 }
 
 .navbar ul li a{
     color:white;
     text-decoration: none;
-    padding: 20px 30px;
+    padding: 20px 40px;
 }
 
 .navbar ul li a:hover{ /*när man hovrar över ska färgen ändras*/
    color: purple; 
+   background-color: #eee;
+   transition-duration: 200ms;
 }
 
 
-.wrapper{
-   color: grey;
+.rubrik{
+   color:rgb(70, 117, 119);
    text-align: center;
-   font-size: 45px;
-   font-family: century;
-   font-style:oblique;
+   font-size: 45px; 
    padding: 10px;
    letter-spacing: 5px;
-
-  
 }
 
-.image{
-    width: 100%;
-    height: 500px;
-    background-image: url(imggg/sofia.jpg);
-    background-size: 30%;
-    background-repeat: no-repeat;
-    opacity: 90%;
-    float:left;
-    background-position: center top;
-      
+.rubrik p{
+    font-size: 50px;
+    color:rgb(70, 117, 119);
+    background-color: lavenderblush;
 }
+
 
 
 
 .button{
-   color:rgb(194, 182, 235);
-   font-family: verdana;
+   color:rgb(141, 124, 198);
+   font-family: "poppins";
    font-weight: 50px;
    font-size: 20px;
    text-align: center;
-   border: solid 2px rgb(194, 182, 235);
+   border: solid rgb(141, 124, 198);
    text-decoration: none;
    border-radius: 50px;
-   padding: 10px 60px;
+   padding: 20px 30px;
    transition-duration: 200ms;
     
 }
@@ -80,69 +74,393 @@
 .button:hover{
    color: white;
    background-color:rgb(194, 182, 235);
+   transition-duration: 200ms;
 
 }
+
+
+
+
 body{
     background-color:floralwhite;
-    margin: 10px;
+    font-family:'Poppins', sans-serif;
     
-
 }
 
-.content{
-    color: grey;
-    font-family: verdana;
-    font-size: 15px;
-    text-align: center;
-    padding: 15px;
+
+
+
+.content{   /*Text innehåll på första sidan*/
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(imggg/pennor.jpeg);
+    background-repeat: no repeat;
+    background-size: cover;
+    
+     
 }
+
 
 .box{
-    background-image: url(imggg/blomma.jpeg);
-    padding: 200px;
-    margin:200px;
-}
-
-.image1{
-    width: 100%;
-    height: 500px;
-    background-image: url(imggg/blomma.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 90%;
-    float:left;
-    background-position: center bottom;
-      
-}
-
-.image2{
-    width: 100%;
-    height: 500px;
-    background-image: url(imggg/projekt.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+font-size: 20px;
+color: rgb(70, 117, 119);
+text-align: left;
+padding: 15px;
+margin:10px;
 
 }
 
-.content{
-    font-size: 20px;
+
+
+
+.box1{   /*bild på mig på första sidan*/
+   flex: 1;
+   padding-left: 30px;  
 }
 
-.content2{
+
+
+
+
+
+.header{  /*Headern för min about me sida*/
     text-align: center;
+    font-size: 20px;
+    background-color: rgb(117, 168, 170);
+    color:white;
+    
+}
+
+.header1{ /*Headern för min kontakt sida*/
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(117, 168, 170);
+    color: white;
+    
+}
+
+
+
+.header2{ /*Headern för min projekt sida*/
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(117, 168, 170);
+    color: white;
+    
+}
+
+
+
+
+/*Här börjar css för min projektsida*/
+
+
+.contproje{
+    background-image: url(imggg/flerpennor.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.projerubrik{
+ font-size: 15px;
+ text-align: center;
+ color: grey;
+ padding:20px;
+
+}
+
+.contproje h2{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+    
+}
+
+.contproje p{
+    text-align: left;
+    font-size: 20px;
+    color:grey;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+.conttextP{
+    color:rgb(58, 103, 105);
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 50px;
+   }
+
+
+
+
+
+
+
+
+/*Här börjar css för min kontaktsida*/
+
+.fa-linkedin{
+    color: rgb(117, 168, 170);
+    font-size: 50px;
+    margin: 0px 200px;
+    padding:20px; 
+    text-decoration: none;
+    
+    
+}
+.fa-linkedin:hover{
+    color: rgb(58, 103, 105);
+    transition-duration: 200ms;
+}
+
+
+
+.fa-github-square{
+    color: rgb(117, 168, 170);
+    font-size: 50px;
+    margin:0 200px;
+    padding:20px;
+    text-decoration: none;
+
+    
+}
+.fa-github-square:hover{
+    color: rgb(58, 103, 105);
+    transition-duration: 200ms;
+    
+}
+
+
+.fa-facebook-square{
+    color: rgb(117, 168, 170);
+    font-size: 50px;
+    margin:0 200px;
     padding: 20px;
-    font-size: 20px;
-
+    text-decoration: none;
 }
 
-.titleP{
-    font-size: 20px;
+.fa-facebook-square:hover{
+    color: rgb(58, 103, 105);
+    transition-duration: 200ms;
+}
+
+
+.contact{
     text-align: center;
-    padding: 15px;
-
+    padding: 50px;
+    color:grey;
+    font-size: 30px;
+    background-color: lavenderblush;
 }
 
-.contentP{
+.text h1{
+    background-color: lavenderblush;
+    padding: 50px;
+}
+
+.text{
+ padding:20px;
+ text-align: center;
+ color: grey;
+ 
+}
+
+
+.text p{
+    padding: 50px;
+    font-size:30px;
+}
+
+.abouttext h1{
+    font-size: 40px;
+    color:rgb(58, 103, 105);
     text-align: center;
+    padding: 25px;
+    background-color: lavenderblush;
 }
+
+.abouttext h2{
+    font-size: 30px;
+    color: grey;
+    padding: 20px;
+    text-align: center;
+   
+    
+}
+
+.abouttext p{
+    text-align: center;
+    color: grey;
+}
+
+
+
+
+.footer{
+    text-align: left;
+    font-size: 20px;
+    background-color: rgb(194, 182, 235);
+    padding: 20px;
+    color:rgb(58, 103, 105);
+    margin-bottom:0;
+    
+   }
+
+
+
+
+
+   @media(max-width:992px) {
+       .box1{
+           flex:50%;
+       }
+      
+       .button{
+        font-size: 15px;
+        font-weight: 10px;
+    }
+
+      .contproje{
+          background-image: url(imggg/flerpennor.jpeg);
+          justify-content: center;
+      }
+    }
+
+    
+    @media(max-width:600px){
+        .navbar ul li a{
+           
+            font-size: 12px;
+             
+        }
+
+        .title{
+            font-size: 30px;
+        }
+
+       .rubrik p{
+           font-size: 30px;
+       }
+
+    
+        .button{
+            font-size: 10px;
+            font-weight: 20px;
+        }
+
+        .box{
+            font-size: 13px;
+        }
+
+        .box1{
+           width: 70%;
+           height: auto;
+           align-items: center;
+           padding-left: 50px;
+
+
+        }
+
+        .content{
+            font-size: 10px;
+            background-color: lavenderblush;
+            justify-content: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+            
+           
+        }
+
+
+        .header{
+            font-size: 10px;
+        }
+
+        .header1{
+            font-size: 10px;
+        }
+
+        .header2{
+            font-size: 10px;
+        }
+
+        .text{
+            font-size: 8px;
+        }
+
+        .text p{
+            font-size: 15px;
+
+        }
+
+        .contact{
+            font-size: 15px;
+        }
+
+
+
+       .contproje{
+           background-color: lightcyan;
+           background-image: none;
+       }
+
+        .contproje h1{
+            font-size: 16px;
+
+        }
+
+        .contproje p{
+            font-size: 14px;
+        }
+
+      
+
+        .conttextP h2{
+            color: darkslategrey;
+            font-size: 20px;
+        }
+
+        .conttextP p{
+            color: darkslategrey;
+            font-size: 10px;
+        }
+
+    
+
+       
+
+
+        .abouttext h1{
+            font-size: 25px;
+        }
+
+        .abouttext h2{
+            font-size: 20px;
+        }
+
+        .abouttext p{
+            font-size: 12px;
+        }
+
+        .footer{
+            font-size: 12px;
+        }
+
+
+
+            
+        
+    }
+
+
+
+  
+
+

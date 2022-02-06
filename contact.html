@@ -6,38 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css"> <!--Länkar till min css fil-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--Länkar till google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/fd954b51b9.js" crossorigin="anonymous"></script>  <!--länkar till mina ikoner jag använt mig av-->
 </head>
 <body>
     <header>
    <nav class="navbar"> <!--Skapar en nav som jag döpt till navbar som är en class som jag kan styla i min css-->
-    <!--Länkar till mina andra sidor jag har på min sida-->
+   
        <ul> <!--list form som jag ska ändra sen i min css så jag får dem på ställena jag vill-->
            <li><a href="aboutMe.html">Om mig</a></li>
-           <li><a href="index.html">Gå tillbaka</a></li>
+           <li><a href="index.html">Gå tillbaka</a></li> <!--Länkar till mina andra sidor jag har på min sida-->
            <li><a href="projects.html">Mina projekt</a></li>  
        </ul>    
     </header>
 
+    <div class="header1">
+        <h1>Kontakt & Sociala medier</h1>
+    </div>
+  
     
-        <div class="content">
-            <h2>Kontakta mig</h2><br><br>
-            <p>Här kan du nå mig på olika sätt</p>
-        </div>
+    <div class="socialMedia">  <!--PARENT-->
+         <div class="text">
+             <h1> Här finns mina sociala medier samt kontakt uppgifter till mig.</h1><br>
+             <hr>
 
-        <div class=content2>
-            <h1>Email:</h1><br>
-            <p>sofiavesterback@hotmail.com</p><br><br>
-            <h1>Telefonnummer:</h1><br>
-             <p>0709671233</p>
-        </div>
+            <p>Kontakt uppgifter:</p> 
+               Email: sofiavesterback@hotmail.com<br>
+               Tel: 0709671223
+         </div>
 
-        
-        
+       
 
-    </section>
-
+       <div class="contact">
+        <p>Mina socialamedier:</p>
+       </div>
+       <br>
+       
    
-    
+   <!--Här länkar jag mina sociala medier och lägger till min javascript 
+    som heter onclick för att det ska komma upp en ruta som meddelar
+    att det här kommer hända när man trycker på ikonen-->
+   <div class="Icons">
+    <a onclick="alert ('Du lämnar nu denna sida.')" href="https://www.linkedin.com/in/sofia-vesterb%C3%A4ck-47859722b/" class="fab fa-linkedin"></i></a>
+    <a onclick="alert ('Du lämnar nu denna sida.')" href="https://github.com/Sofiavesterback" class="fab fa-github-square"></i></a>
+    <a onclick="alert ('Du lämnar nu denna sida.')" href="https://www.facebook.com/profile.php?id=100009343658718" class="fab fa-facebook-square"></i></a>
+
+   </div>
+
+</div> <!--SLUT PARENT-->
+
+
+
+<div class="footer"> <!--Lägger min footer utanför parent-->
+    <footer>Email: sofiavesterback@hotmail.com</footer>
+</div>
+
+
+
+
+
   
 </body>
 </html>
